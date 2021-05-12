@@ -22,7 +22,8 @@ Variables
   --clr-primary-5: linear-gradient(
     to bottom right,
     var(--clr-gradient-start),
-    var(--clr-gradient-end)
+    var(--clr-gradient-end),
+    #022
   );
   /* lighter shades of primary color */
   --clr-primary-6: hsl(8, 57%, 50%);
@@ -180,7 +181,7 @@ p {
     width: 95vw;
   }
 }
-/* added during recording */
+
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -211,7 +212,7 @@ p {
   transition: var(--transition);
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
 }
 /*
 =============== 
@@ -247,7 +248,7 @@ Navbar
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -277,8 +278,8 @@ Navbar
     padding: 0.5rem 0;
   }
   .nav-links a:hover {
-    color: var(--clr-primary-5);
-    box-shadow: 0px 2px var(--clr-primary-5);
+    color: var(--clr-gradient-start);
+    box-shadow: 0px 2px var(--clr-gradient-start);
   }
   .nav-center {
     display: grid;
@@ -331,7 +332,7 @@ Sidebar
 }
 .sidebar-links li a:hover {
   background: var(--clr-primary-9);
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
 }
 .close-btn {
   position: absolute;
@@ -575,12 +576,12 @@ Jobs
   line-height: 1;
 }
 .job-btn:hover {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: var(--clr-gradient-start);
+  box-shadow: 0 2px var(--clr-gradient-start);
 }
 .active-btn {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: var(--clr-gradient-start);
+  box-shadow: 0 2px var(--clr-gradient-start);
 }
 .job-info {
   background-color: var(--clr-white);
@@ -612,7 +613,7 @@ Jobs
   color: var(--clr-grey-3);
 }
 .job-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
 }
 @media screen and (min-width: 992px) {
   .jobs-center {
@@ -629,10 +630,10 @@ Jobs
     margin-bottom: 1rem;
   }
   .active-btn {
-    box-shadow: -2px 0 var(--clr-primary-5);
+    box-shadow: -2px 0 var(--clr-gradient-start);
   }
   .job-btn:hover {
-    box-shadow: -2px 0 var(--clr-primary-5);
+    box-shadow: -2px 0 var(--clr-gradient-start);
   }
 }
 
@@ -661,7 +662,7 @@ Projects
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
+  background: var(--clr-primary-5);
   opacity: 0.85;
   transition: var(--transition);
 }
@@ -677,7 +678,7 @@ Projects
 .project-number {
   display: inline-block;
   font-size: 1.25rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
   margin-bottom: 0.75rem;
 }
 .project-info h3 {
@@ -708,7 +709,7 @@ Projects
   margin-top: 0.5rem;
 }
 .project-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
   font-size: 1.25rem;
   margin-right: 0.5rem;
   transition: var(--transition);
@@ -852,7 +853,7 @@ Footer
   text-transform: uppercase;
 }
 .footer h4 span {
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
 }
 .footer-links {
   margin: 0 auto 1rem auto;
@@ -861,7 +862,7 @@ Footer
   color: var(--clr-white);
 }
 .footer .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
 }
 /*
 ===============
@@ -933,7 +934,7 @@ About Page
   color: var(--clr-grey-4);
 }
 .stack-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
   margin-right: 0.25rem;
   font-size: 1rem;
 }
@@ -1037,7 +1038,7 @@ Blog Template
   border-radius: var(--radius);
   padding: 1rem;
   line-height: 2;
-  color: var(--clr-primary-5);
+  color: var(--clr-gradient-start);
   margin: 2rem 0;
 }
 .blog-template pre {
