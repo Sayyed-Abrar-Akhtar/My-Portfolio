@@ -1,12 +1,31 @@
 import React from "react"
-import Image from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
-// ...GatsbyImageSharpFluid
 
 const Hero = () => {
-  return <h2>hero component</h2>
+  return (
+    <header className="hero">
+      <div className="section-center hero-center">
+        <article className="hero-info">
+          <div className="underline"></div>
+          <h1>i'm sayyed</h1>
+          <h4 className="hero-text">freelance web and android developer</h4>
+          <Link to="/contact" className="btn">
+            let's work together
+          </Link>
+          <SocialLinks />
+        </article>
+        <StaticImage
+          src="../assets/hero-img.png"
+          alt="flowers and egg"
+          className="hero-img"
+          layout="constrained"
+          placeholder="tracedSVG"
+        />
+      </div>
+    </header>
+  )
 }
 
 export default Hero

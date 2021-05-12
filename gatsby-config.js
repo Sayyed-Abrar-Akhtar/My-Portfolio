@@ -16,6 +16,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
@@ -35,6 +42,10 @@ module.exports = {
       options: {
         fonts: {
           google: [
+            {
+              family: "Reggae One",
+              variants: ["400"],
+            },
             {
               family: "Roboto",
               variants: ["400", "700"],

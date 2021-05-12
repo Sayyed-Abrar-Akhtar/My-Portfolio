@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Permanent+Marker&family=Roboto:wght@300;400;500;700&display=swap');*/
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Reggae+One&family=Roboto:wght@400;700&display=swap');*/
 
 /*
 =============== 
@@ -22,8 +22,7 @@ Variables
   --clr-primary-5: linear-gradient(
     to bottom right,
     var(--clr-gradient-start),
-    var(--clr-gradient-end),
-    #022
+    var(--clr-gradient-end)
   );
   /* lighter shades of primary color */
   --clr-primary-6: hsl(8, 57%, 50%);
@@ -44,10 +43,10 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
-  --ff-heading: "Permanent Marker", cursive;
+  --ff-heading: "Reggae One", cursive;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
+  --transition: all 0.1s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -74,7 +73,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 ul {
   list-style-type: none;
@@ -141,8 +140,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: var(--clr-grey-1);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -150,14 +148,19 @@ p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 2px solid transparent;
+  border: 2px solid var(--clr-gradient-start);
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .center-btn {
   display: block;
@@ -419,11 +422,14 @@ Hero
 */
 /* underline added to globals */
 .hero {
-  margin-top: -5rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
   height: 100vh;
   background: var(--clr-primary-10);
   position: relative;
+}
+
+.hero-text {
+  padding-top: 0.8rem;
 }
 
 .hero-center {
