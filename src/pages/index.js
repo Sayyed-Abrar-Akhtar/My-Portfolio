@@ -10,6 +10,10 @@ export default () => {
   return (
     <Layout>
       <Hero />
+      <Services />
+      <Jobs />
+      <Projects />
+      <Blogs />
     </Layout>
   )
 }
