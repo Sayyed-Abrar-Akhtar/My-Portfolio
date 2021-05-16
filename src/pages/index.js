@@ -42,6 +42,22 @@ export const query = graphql`
         }
       }
     }
+    allStrapiBlogs {
+      nodes {
+        id
+        title
+        desc
+        category
+        slug
+        content
+        date(formatString: "MMM Do, YYYY")
+        image {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
+          }
+        }
+      }
+    }
   }
 `
 
