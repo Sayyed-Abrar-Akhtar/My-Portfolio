@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <Layout>
       <section className="section">
-        <Blogs />
+        <Blogs blogs={} title="blog" />
       </section>
     </Layout>
   )
