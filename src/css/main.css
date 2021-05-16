@@ -91,17 +91,22 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
-h2,
+
 h3,
 h4 {
   font-family: var(--ff-primary);
 }
-h1 {
+h1,
+h2 {
   font-family: var(--ff-heading);
+}
+
+h1 {
   font-size: 3rem;
 }
+
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -118,7 +123,7 @@ p {
     font-size: 4rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 1.75rem;
@@ -663,9 +668,15 @@ Jobs
 Projects
 ===============
 */
-.projects {
+.projects,
+.featured-projects {
   background: var(--clr-grey-10);
 }
+
+.projects {
+  margin-top: 5rem;
+}
+
 .project {
   display: grid;
   margin-bottom: 4rem;
@@ -690,6 +701,11 @@ Projects
 .project:hover .project-img::after {
   opacity: 0;
 }
+
+.project:hover > .project-img {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .project-info {
   background: var(--clr-white);
   padding: 1rem 2rem;
@@ -701,6 +717,7 @@ Projects
   font-size: 1.25rem;
   color: var(--clr-gradient-start);
   margin-bottom: 0.75rem;
+  font-weight: 700;
 }
 .project-info h3 {
   font-weight: 500;
@@ -708,7 +725,8 @@ Projects
   font-size: 1.5rem;
 }
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -785,6 +803,7 @@ Projects
 Blog
 ===============
 */
+
 .blog {
   display: block;
   margin-bottom: 2rem;

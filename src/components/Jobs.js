@@ -36,7 +36,6 @@ const Jobs = () => {
   const { company, position, date, desc, type } = experiences[value].info[
     project
   ]
-  console.log(company, position, date, desc, type)
 
   return (
     <section className="section jobs">
