@@ -2,8 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
-import Image from "gatsby-image"
-// ...GatsbyImageSharpFluid
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 const About = () => {
   return <h2>about page</h2>
 }
