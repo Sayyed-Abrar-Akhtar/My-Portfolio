@@ -43,7 +43,7 @@ export const query = graphql`
         }
       }
     }
-    allStrapiBlogs {
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
       nodes {
         id
         title
