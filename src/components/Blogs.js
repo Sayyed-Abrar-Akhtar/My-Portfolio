@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
     <section className="section">
-      <Title title="Blog" />
-      <Blog />
+      <Title title={title} />
+      {blogs.map(blog => console.log(blog))}
     </section>
   )
 }

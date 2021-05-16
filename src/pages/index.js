@@ -9,6 +9,7 @@ import Blogs from "../components/Blogs"
 const Index = ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
   console.log(data)
   return (
@@ -17,7 +18,7 @@ const Index = ({ data }) => {
       <Services />
       <Jobs />
       <Projects projects={projects} title="featured projects" showLink />
-      <Blogs />
+      <Blogs blogs={blogs} title="blog" showLink />
     </Layout>
   )
 }
