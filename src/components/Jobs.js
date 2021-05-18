@@ -33,9 +33,7 @@ const Jobs = () => {
 
   const [value, setValue] = React.useState(0)
   const [project, setProject] = React.useState(0)
-  const { company, position, date, desc, type } = experiences[value].info[
-    project
-  ]
+  const { date, desc } = experiences[value].info[project]
 
   return (
     <section className="section jobs">
@@ -64,11 +62,13 @@ const Jobs = () => {
           {experiences[value].info.map((info, index) => {
             return (
               <span
+                role="button"
                 className={`job-company${
                   index === project ? " job-company--active" : ""
                 }`}
                 key={info.infoId}
                 onClick={() => setProject(index)}
+                onKeyPress={e => console.log(e)}
               >
                 {info.position}
               </span>

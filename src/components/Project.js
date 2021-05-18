@@ -17,14 +17,14 @@ const Project = ({
     <article className="project">
       <GatsbyImage image={pathToImage} className="project-img" alt={title} />
       <div className="project-info">
-        <span className="project-number">
+        <span className="project-number" key={id}>
           {index < 10 ? `0${index + 1}` : `${index + 1}`}
         </span>
         <h3>{title}</h3>
         <p className="project-desc">{description}</p>
         <div className="project-stack">
-          {stack.map(stack => {
-            return <span key={stack.id}>{stack.stack_title}</span>
+          {stack.map((stack, index) => {
+            return <span key={index}>{stack.stack_title}</span>
           })}
         </div>
         <div className="project-links">
@@ -42,6 +42,12 @@ const Project = ({
   )
 }
 
-Project.propTypes = {}
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.object).isRequired,
+  image: PropTypes.object.isRequired,
+}
 
 export default Project

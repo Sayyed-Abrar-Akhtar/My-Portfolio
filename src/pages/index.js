@@ -18,7 +18,7 @@ const Index = ({ data }) => {
       <Services />
       <Jobs />
       <Projects projects={projects} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="blog" showLink />
+      <Blogs blogs={blogs} title="Latest blog" showLink />
     </Layout>
   )
 }
@@ -50,7 +50,6 @@ export const query = graphql`
         desc
         category
         slug
-        content
         date(formatString: "MMM Do, YYYY")
         image {
           childImageSharp {

@@ -10,7 +10,7 @@ const Blog = ({
 }) => {
   return (
     <Layout>
-      <section className="section">
+      <section className="blog-page">
         <Blogs blogs={blogs} title="blog" />
       </section>
     </Layout>
@@ -26,7 +26,6 @@ export const query = graphql`
         desc
         category
         slug
-        content
         date(formatString: "MMM Do, YYYY")
         image {
           childImageSharp {

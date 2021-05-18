@@ -1,7 +1,7 @@
 import React from "react"
-import { FaShopify, FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { FaShopify, FaCode, FaAndroid } from "react-icons/fa"
 let id = 0
-export default [
+const services = [
   {
     id: `${(id += 1)}`,
     icon: <FaShopify className="service-icon" />,
@@ -21,3 +21,5 @@ export default [
     text: `I have designed and developed an ecommerce application with admin functionality. I can help you with designing and developing modern android applications.`,
   },
 ]
+
+export default services
