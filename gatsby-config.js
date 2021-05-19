@@ -7,7 +7,27 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    siteUrl: `https://www.example.com`,
+    title: `Sayyed Portfolio`,
+    description: `A portfolio website enlightening my skill, projects and experiences.`,
+    author: `Sayyed Abrar Akhtar`,
+    twitterUsername: `@SayyedAbrarAkh1`,
+    image: `/sayyed-img.png`,
+    keywords: [
+      "sayyed abrar akhtar",
+      "sayyed-portfolio",
+      "portfolio",
+      "freelance",
+      "shopify developer",
+      "web developer",
+      "full stack developer",
+      "mern developer",
+      "android developer",
+      "software developer",
+      "web designer",
+      "ui/ux designer",
+      "portfolio website",
+    ],
+    siteUrl: `https://www.sayyedabrarakhtar.com.np`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -25,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://myportfolio-strapi-headless.herokuapp.com`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`experiences`, `projects`, `blogs`],
         singleTypes: [`about`],

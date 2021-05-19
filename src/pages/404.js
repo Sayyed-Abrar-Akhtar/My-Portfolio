@@ -2,7 +2,7 @@ import React from "react"
 import { FaSadTear } from "react-icons/fa"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 
 const Error = () => {
   return (

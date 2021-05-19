@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import Seo from "../components/Seo"
 const Index = ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
@@ -14,6 +15,10 @@ const Index = ({ data }) => {
   console.log(data)
   return (
     <Layout>
+      <Seo
+        title="Home"
+        description="Landing page of the website. It displays my skills, experiences, projects and latest blogs"
+      />
       <Hero />
       <Services />
       <Jobs />
