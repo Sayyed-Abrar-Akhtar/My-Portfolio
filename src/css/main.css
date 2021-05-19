@@ -961,6 +961,12 @@ Pages
   color: var(--clr-primary-1);
   margin-bottom: 2rem;
 }
+.error-icon--sad {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem auto;
+  fill: var(--clr-grey-1);
+}
 /*
 ===============
 Blog Page

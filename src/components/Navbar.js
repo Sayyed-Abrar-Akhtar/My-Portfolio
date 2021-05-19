@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg"
 import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -11,7 +11,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
-          <button className="toggle-btn" type="button">
+          <button className="toggle-btn" type="button" onClick={toggleSidebar}>
             <FaAlignRight></FaAlignRight>
           </button>
         </div>

@@ -62,7 +62,8 @@ const Jobs = () => {
           {experiences[value].info.map((info, index) => {
             return (
               <span
-                role="button"
+                tabindex={index}
+                role="tab"
                 className={`job-company${
                   index === project ? " job-company--active" : ""
                 }`}

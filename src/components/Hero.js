@@ -12,7 +12,7 @@ const Hero = () => {
           <h1>i'm sayyed</h1>
           <h4 className="hero-text">freelance web and android developer</h4>
           <Link to="/contact" className="btn">
-            let's work together
+            let's connect
           </Link>
           <SocialLinks />
         </article>
