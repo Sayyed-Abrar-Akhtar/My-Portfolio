@@ -10,7 +10,6 @@ const About = ({
   },
 }) => {
   const { title, heading, info, stack, image } = nodes[0]
-  console.log(title, heading, info, stack, image)
   const pathToImage = getImage(image)
   return (
     <Layout>
