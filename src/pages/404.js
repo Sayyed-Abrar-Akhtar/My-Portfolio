@@ -7,6 +7,7 @@ import Seo from "../components/SEO"
 const Error = () => {
   return (
     <Layout>
+      <Seo title="404" />
       <main className="error-page">
         <div className="error-container">
           <FaSadTear className="error-icon--sad" />
