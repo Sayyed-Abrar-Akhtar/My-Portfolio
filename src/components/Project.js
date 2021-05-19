@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaGithub, FaLink } from "react-icons/fa"
+import { Link } from "gatsby"
 const Project = ({
   id,
   title,
