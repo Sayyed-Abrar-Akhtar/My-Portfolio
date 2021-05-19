@@ -12,7 +12,6 @@ const Index = ({ data }) => {
     allStrapiProjects: { nodes: projects },
     allStrapiBlogs: { nodes: blogs },
   } = data
-  console.log(data)
   return (
     <Layout>
       <Seo
