@@ -18,7 +18,7 @@ const query = graphql`
   }
 `
 
-const Seo = ({ title, description }) => {
+const Seo = ({ title, description, detail }) => {
   const { site } = useStaticQuery(query)
   const {
     author,
@@ -30,7 +30,10 @@ const Seo = ({ title, description }) => {
     twitterUsername,
   } = site.siteMetadata
   return (
-    <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
+    <Helmet
+      htmlAttributes={{ lang: "en" }}
+      title={`${title} | ${detail ? detail : siteTitle}`}
+    >
       <meta name="description" content={description || siteDesc} />
       <meta name="author" content={author} />
       <meta name="image" content={image} />
