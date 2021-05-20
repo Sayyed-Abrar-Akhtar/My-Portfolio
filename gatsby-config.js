@@ -29,6 +29,14 @@ module.exports = {
     ],
     siteUrl: `https://www.sayyedabrarakhtar.com.np`,
   },
+  flags: {
+    FAST_DEV: true,
+    DEV_SSR: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true,
+    FUNCTIONS: true,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -58,13 +66,16 @@ module.exports = {
           google: [
             {
               family: "Reggae One",
-              variants: ["400"],
+              variants: ["400", "500", "700"],
             },
             {
               family: "Roboto",
-              variants: ["400", "700"],
+              variants: ["400", "500", "700"],
             },
-            { family: "Open Sans" },
+            {
+              family: "Open Sans",
+              variants: ["400", "500", "700"],
+            },
           ],
         },
       },

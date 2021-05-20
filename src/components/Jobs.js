@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 const query = graphql`
   {
-    allStrapiExperiences {
+    allStrapiExperiences(sort: { fields: strapiId, order: DESC }) {
       nodes {
         info {
           company
