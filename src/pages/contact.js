@@ -11,7 +11,7 @@ const contact = () => {
       <Seo title="Contact" />
       <section className="contact-page">
         <article className="contact-info">
-          <Title title="conatct details" />
+          <Title title="contact details" />
           <div className="contact-details">
             <p className="contact-heading">
               <RiMailSendFill />
