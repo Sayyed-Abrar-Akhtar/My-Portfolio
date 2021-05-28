@@ -29,7 +29,7 @@ const About = ({
             <p>{info}</p>
             <div className="about-stack">
               {stack.map(item => {
-                return <span key={item.id}> {item.title}</span>
+                return <span key={item.id}> {item.stack_title}</span>
               })}
             </div>
           </article>
