@@ -29,11 +29,13 @@ const Seo = ({ title, description, detail }) => {
     siteTitle,
     twitterUsername,
   } = site.siteMetadata
+
+  const customTitle = title
+    ? `${title}${detail ? ` | ${detail}` : ""}`
+    : `${siteTitle}${detail ? ` | ${detail}` : ""}`
+
   return (
-    <Helmet
-      htmlAttributes={{ lang: "en" }}
-      title={`${title == "Home" ? siteTitle | detail : title | detail}`}
-    >
+    <Helmet htmlAttributes={{ lang: "en" }} title={customTitle}>
       <meta name="description" content={description || siteDesc} />
       <meta name="author" content={author} />
       <meta name="image" content={image} />

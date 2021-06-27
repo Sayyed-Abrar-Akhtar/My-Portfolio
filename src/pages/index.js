@@ -14,7 +14,7 @@ const Index = ({ data }) => {
   } = data
   return (
     <Layout>
-      <Seo title="Home" detail="Portfolio Website" />
+      <Seo detail="Portfolio Website" />
       <Hero />
       <Services />
       <Jobs />
