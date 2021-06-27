@@ -7,8 +7,9 @@ const siteUrl = process.env.URL || `https://www.sayyedabrarakhtar.com.np`
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Sayyed Abrar Akhtar | Full Stack Developer | Android Developer`,
-    description: `It's not about being better. It's about being different. My portfolio enlightening the skills, projects and experiences I have developed during the years.`,
+    title: `Sayyed Abrar Akhtar - Software developer`,
+    description: `I am Sayyed Abrar Akhtar.My portfolio enlightens the skills, projects and experiences I have developed during the years as a Full stack developer, android developer and shopify developer. 
+    It's not about being better. It's about being different. `,
     author: `Sayyed Abrar Akhtar`,
     twitterUsername: `@SayyedAbrarAkh1`,
     image: `/sayyed-img.png`,
