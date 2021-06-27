@@ -32,7 +32,7 @@ const Seo = ({ title, description, detail }) => {
   return (
     <Helmet
       htmlAttributes={{ lang: "en" }}
-      title={`${title ? title : siteTitle | detail}`}
+      title={`${title == "Home" ? siteTitle | detail : title | detail}`}
     >
       <meta name="description" content={description || siteDesc} />
       <meta name="author" content={author} />
