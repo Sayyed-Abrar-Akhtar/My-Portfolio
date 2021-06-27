@@ -48,6 +48,7 @@ const Seo = ({ title, description, detail }) => {
       <meta name="twitter:title " content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <link rel="canonical" href="https://www.sayyedabrarakhtar.com.np" />
     </Helmet>
   )
 }
