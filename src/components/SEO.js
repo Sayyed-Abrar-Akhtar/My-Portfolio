@@ -38,6 +38,11 @@ const Seo = ({ title, description, detail }) => {
       <meta name="author" content={author} />
       <meta name="image" content={image} />
       <meta name="keywords" content={keywords} />
+      <meta name="og:url" content={siteUrl} />
+      <meta name="og:type" content={website} />
+      <meta name="og:title" content={siteTitle} />
+      <meta name="og:description" content={siteDesc} />
+      <meta name="og:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title " content={siteTitle} />
