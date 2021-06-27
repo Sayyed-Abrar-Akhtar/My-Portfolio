@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="section-center hero-center">
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>i'm sayyed</h1>
-          <h4 className="hero-text">freelance web and android developer</h4>
+          <h1>I'm sayyed</h1>
+          <h4 className="hero-text">A software developer</h4>
           <Link to="/contact" className="btn">
             let's connect <span className="hero-icon--gt">&#8811;</span>
           </Link>
