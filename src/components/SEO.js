@@ -50,6 +50,10 @@ const Seo = ({ title, description, detail }) => {
       <meta name="twitter:title " content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta
+        name="trustpilot-one-time-domain-verification-id"
+        content="52366a5b-9d7f-402e-ad3c-d7d3ff9e87d9"
+      />
       <link rel="canonical" href="https://www.sayyedabrarakhtar.com.np" />
     </Helmet>
   )
