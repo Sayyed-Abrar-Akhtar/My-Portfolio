@@ -934,10 +934,10 @@ Footer
 .footer-heart {
   height: 0.75rem;
   color: #fe251b;
-  animation: 1.5s cubic-bezier(0.5, 0, 0.5, 1) 0s normal none infinite running
-    heartbeat;
-  -webkit-animation: 1.5s cubic-bezier(0.5, 0, 0.5, 1) 0s normal none infinite
-    running heartbeat;
+  animation: heartbeat 1.5s cubic-bezier(0.5, 0, 0.5, 1) 0s normal none infinite
+    running;
+  -webkit-animation: heartbeat 1.5s cubic-bezier(0.5, 0, 0.5, 1) 0s normal none
+    infinite running;
 }
 
 .footer-links {
