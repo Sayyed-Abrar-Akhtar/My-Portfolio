@@ -14,6 +14,7 @@ module.exports = {
     image: `/sayyed-img.png`,
     keywords: [
       "sayyed abrar akhtar",
+      "software engineer",
       "sayyed-portfolio",
       "portfolio",
       "freelance",
@@ -60,7 +61,7 @@ module.exports = {
       options: {
         apiURL: `https://myportfolio-strapi-headless.herokuapp.com`,
         queryLimit: 1000, // Default to 100
-        contentTypes: [`experiences`, `projects`, `blogs`],
+        contentTypes: [`experiences`, `projects`, `blogs`, `awards`],
         singleTypes: [`about`],
       },
     },

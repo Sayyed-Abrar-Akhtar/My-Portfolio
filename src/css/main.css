@@ -24,6 +24,11 @@ Variables
     var(--clr-gradient-start),
     var(--clr-gradient-end)
   );
+  --clr-primary-5-light: linear-gradient(
+    to bottom right,
+    rgba(255, 97, 77, 0.5),
+    rgba(243, 83, 105, 0.5)
+  );
   /* lighter shades of primary color */
   --clr-primary-6: hsl(8, 57%, 50%);
   --clr-primary-7: hsl(7, 65%, 59%);
@@ -1005,6 +1010,127 @@ Blog Page
 About Page
 ===============
 */
+
+.awards-container {
+  margin: 3rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem 0;
+  background-color: var(--clr-white);
+}
+
+.awards {
+  height: 20rem;
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid var(--clr-gradient-start);
+  background: none;
+}
+
+.awards:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.award_img {
+  align-self: center;
+  height: 100%;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.awards > .award_img {
+  opacity: 1;
+}
+
+.awards:hover > .award_img {
+  opacity: 0.25;
+}
+
+.award_title {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.awards:hover > .award_title {
+  opacity: 1;
+}
+
+.view_control {
+  cursor: pointer;
+}
+
+.display_award_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.award_close_icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.close_icon {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.view_award_img {
+  width: 100%;
+}
+
+@media screen and (max-width: 675px) {
+  .awards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .display_award_container {
+    padding: 2rem;
+  }
+
+  .award_close_icon {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .close_icon {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 676px) {
+  .awards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ABOUT PAGE */
+
 .about-page {
   padding: 7rem 0;
 }
@@ -1013,6 +1139,7 @@ About Page
   height: 25rem;
 }
 .about-text .section-title {
+  margin-top: 3rem;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -1023,6 +1150,7 @@ About Page
 .about-text p {
   line-height: 2;
 }
+
 .stack-container {
   width: 30rem;
   display: grid;
@@ -1208,4 +1336,8 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
+}
+
+.homepage_award {
+  margin: 10rem 0 9rem 0;
 }

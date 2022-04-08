@@ -50,7 +50,7 @@ const contact = () => {
             </p>
             <div className="contact-value">
               <p className="contact-value--text">
-                <a href="https://www.facebook.com/mohammad.amiralmomenin.7/">
+                <a href="https://www.facebook.com/profile.php?id=100079940482657">
                   facebook/sayyed-abrar
                 </a>
               </p>

@@ -11,7 +11,7 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.facebook.com/mohammad.amiralmomenin.7/",
+    url: "https://www.facebook.com/profile.php?id=100079940482657",
   },
   {
     id: 2,
