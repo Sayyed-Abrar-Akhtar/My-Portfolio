@@ -65,10 +65,12 @@ const contact = () => {
                 type="text"
                 className="form-control"
                 placeholder="name"
+                name="name"
                 required
               />
               <input
                 type="email"
+                name="email"
                 className="form-control"
                 placeholder="email"
                 required
